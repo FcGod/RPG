@@ -1,4 +1,0 @@
-//SPELLS ARE FUNCTIONS THAT TAKE THIS.OBJECT AND ENEMY OBJECT
-//YOU HARD IMPLEMENT EACH
-//NOT CLASSES
-//Should just make a combat.cpp and have it all there

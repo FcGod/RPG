@@ -2,20 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <string>
-
-enum StatNames
-{
-	Health,
-	Mana,
-	Armour,
-	Strenghts,
-	Intellect,
-	Agility,
-	Consitution,
-	Dodge,
-	STAT_COUNTER
-};
+#include "EntityHelperLists.h"
 
 class Entity
 {
@@ -30,12 +17,10 @@ public:
 	friend std::ostream& operator<<(std::ostream& out, const Entity& entity);
 
 private:
-	std::vector<std::string> m_inventory;
-	std::vector<int> m_stats;
 	std::string m_playerName{};
+	std::vector<int> m_stats;
+	struct Item m_inventory[50];
 };
-
-
 
 
 	

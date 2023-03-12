@@ -1,9 +1,12 @@
 #include <iostream>
 #include "HelperFunctions.h"
+#include "Entity.h"
 
 int main()
+{
+	Entity lmao;
 
-	takeChoice("I like cock!");
+
 
 	return 0;
 }

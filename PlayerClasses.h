@@ -1,12 +1,15 @@
 #pragma once
 #include "Entity.h"
 #include "Combat.h"
-
+#include "Enemy.h"
 		
-class PlayerClass : public Entity
+class PlayerClass : public Entity, public Combat
 {
 public:
-	void autoAttack();
+	void autoAttack(Enemy enemy);
+	PlayerClass() : m_autoDmg{50} {};
+	int getAutoDmg() { return m_autoDmg;}
+	~PlayerClass() {};
 
 private:
 	int m_autoDmg;

@@ -4,6 +4,7 @@
 #include <string>
 #include "EntityHelperLists.h"
 
+
 class Entity
 {
 public:
@@ -12,7 +13,8 @@ public:
 	
 
 	//Functions declarations
-	void updateStat(StatNames statName, int statValue);
+	void addToStat(StatNames statName, int statValue);
+	int  getStat(StatNames statName);
 
 	friend std::ostream& operator<<(std::ostream& out, const Entity& entity);
 
